@@ -71,16 +71,22 @@
 		}
 	});
 	document.addEventListener("scroll", function () {
-    		let footer = document.getElementById("footer");
-    		let position = footer.getBoundingClientRect().top;
-   		let screenWidth = window.innerWidth;
-
-    		if (position < screenWidth / 1.3) {
-        		footer.classList.add("visible");
-    		} else {
-       		 footer.classList.remove("visible");
-    		}
-});
+		let aboutSection = document.getElementById("footer");
+		let aboutPosition = aboutSection.getBoundingClientRect().top;
+		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
+		let screenHeight = window.innerHeight;
+	
+		// When the section comes into view, slide it in
+		if (aboutPosition < screenHeight / 1.3 && aboutBottom > 0) {
+			aboutSection.classList.add("visible");
+			aboutSection.classList.remove("hidden-out-left");
+		} 
+		// When the section is scrolled past (up or down), move it out
+		else {
+			aboutSection.classList.remove("visible");
+			aboutSection.classList.add("hidden-out-left");
+		}
+	});
 
 	
 		
