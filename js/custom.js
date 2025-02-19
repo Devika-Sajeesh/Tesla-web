@@ -87,6 +87,10 @@
 			aboutSection.classList.add("hidden-out-left");
 		}
 	});
+	window.addEventListener("resize", function () {
+    document.body.style.overflowX = "hidden";
+    document.documentElement.style.overflowX = "hidden";
+});
 	
 		
 	// SMOOTH SCROLL
