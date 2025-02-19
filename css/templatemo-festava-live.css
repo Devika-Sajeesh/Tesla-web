@@ -82,6 +82,7 @@ https://templatemo.com/tm-583-festava-live
 body {
   background-color: var(--dark-color);
   font-family: var(--body-font-family); 
+  overflow-x: hidden;
 }
 
 
