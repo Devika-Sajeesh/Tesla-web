@@ -79,7 +79,11 @@ https://templatemo.com/tm-583-festava-live
   --font-weight-bold:             700;
 }
 
-body {
+* {
+	max-width:100;
+	box-sizing: border-box;
+}
+html, body {
   background-color: var(--dark-color);
   font-family: var(--body-font-family); 
   overflow-x: hidden;
