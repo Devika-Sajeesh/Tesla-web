@@ -1172,6 +1172,23 @@ strong {
 
 /* Media query for phone view */
 @media (max-width: 768px) {
+	
+  body {
+    position: relative;
+}
+#footer {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+  .event-card {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .event-card img {
+      width: 100%;
+      height: auto;
+  }
+}
   .event-card {
       width: 90%;
       margin: 0 auto;
