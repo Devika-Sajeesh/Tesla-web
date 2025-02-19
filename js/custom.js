@@ -87,7 +87,6 @@
 			aboutSection.classList.add("hidden-out-left");
 		}
 	});
-
 	
 		
 	// SMOOTH SCROLL
