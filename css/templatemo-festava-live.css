@@ -664,13 +664,16 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url("images/tesla-bg.png");
+  background-image: url("../images/tesla-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  /* height: calc(100vh - 5px); */
   height: 100vh;
 }
+
 
 .hero-bg-logo{
   position: absolute;
