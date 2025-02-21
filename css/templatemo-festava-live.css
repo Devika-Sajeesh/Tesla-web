@@ -237,8 +237,6 @@ strong {
   transform: translateX(100%) rotate(90deg);
   font-size: 32px;
 }
-<<<<<<< HEAD
-=======
 /*Statistics*/
 .stats-container {
   display: flex;
@@ -273,7 +271,6 @@ strong {
   font-weight: bold;
   color: white;
 }
->>>>>>> master
 
 /*@keyframes glitch {
   /*0% {
@@ -392,11 +389,7 @@ strong {
 
 /* Apply the glitch effect only to the image */
 .glitch-img {
-<<<<<<< HEAD
-  animation: glitch 0.15s infinite alternate ease-in-out;
-=======
   animation: glitch 0.75s infinite alternate ease-in-out;
->>>>>>> master
 }
 
 
@@ -705,21 +698,13 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-<<<<<<< HEAD
-  background-image: url("../images/tesla-bg.png");
-=======
   background-image: url("..images/tesla-bg.png");
->>>>>>> master
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-<<<<<<< HEAD
-  padding-top: 100px;
-=======
   padding-top: 20px;
->>>>>>> master
   height: 100vh;
 }
 
@@ -928,16 +913,7 @@ strong {
   background-color: var(--secondary-color);
 }
 
-<<<<<<< HEAD
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  /* border-bottom-color: #363a3e; */
-  /* padding: 30px; */
-}
-=======
 
->>>>>>> master
 
 .schedule-table tr:last-child th,
 .schedule-table tr:last-child td {
@@ -1557,12 +1533,8 @@ h3{
   display: flex;
   justify-content: center;
   width: auto;
-<<<<<<< HEAD
-  height: 70px;
-=======
   height: 100px;
   margin-top: 30px;
->>>>>>> master
 }
 
 @media screen and (max-width: 768px) {
