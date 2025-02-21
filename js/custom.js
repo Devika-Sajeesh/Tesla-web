@@ -54,7 +54,11 @@
 		}
 	});
 	document.addEventListener("scroll", function () {
+<<<<<<< HEAD
 		let aboutSection = document.getElementById("preEvents");
+=======
+		let aboutSection = document.getElementById("stat");
+>>>>>>> master
 		let aboutPosition = aboutSection.getBoundingClientRect().top;
 		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
 		let screenHeight = window.innerHeight;
@@ -71,7 +75,11 @@
 		}
 	});
 	document.addEventListener("scroll", function () {
+<<<<<<< HEAD
 		let aboutSection = document.getElementById("footer");
+=======
+		let aboutSection = document.getElementById("preEvents");
+>>>>>>> master
 		let aboutPosition = aboutSection.getBoundingClientRect().top;
 		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
 		let screenHeight = window.innerHeight;
@@ -87,11 +95,35 @@
 			aboutSection.classList.add("hidden-out-left");
 		}
 	});
+<<<<<<< HEAD
+=======
+	
+	document.addEventListener("scroll", function () {
+		let aboutSection = document.getElementById("footer");
+		let aboutPosition = aboutSection.getBoundingClientRect().top;
+		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
+		let screenHeight = window.innerHeight;
+	
+		// When the section comes into view, slide it in
+		if (aboutPosition < screenHeight / 1.3 && aboutBottom > 0) {
+			aboutSection.classList.add("visible");
+			aboutSection.classList.remove("hidden-out-right");
+		} 
+		// When the section is scrolled past (up or down), move it out
+		else {
+			aboutSection.classList.remove("visible");
+			aboutSection.classList.add("hidden-out-right");
+		}
+	});
+>>>>>>> master
 	window.addEventListener("resize", function () {
     document.body.style.overflowX = "hidden";
     document.documentElement.style.overflowX = "hidden";
 });
+<<<<<<< HEAD
 	
+=======
+>>>>>>> master
 		
 	// SMOOTH SCROLL
 	$(function () {
