@@ -447,7 +447,7 @@ strong {
   position: absolute;
   top: 0;
   left: 0;
-  pointer-events: none;
+  pointer-s: none;
   width: 100%;
   height: 100%;
   opacity: 0.35;
@@ -1208,7 +1208,7 @@ strong {
 
 /* Media query for phone view */
 @media (max-width: 768px) {
-.container, .row, .navbar, .hero-section, .event-card, .events-container {
+.container, .row, .navbar, .hero-section, .event-card, .events-container,.stats-container,.stat-item {
         max-width: 100vw ;
         overflow-x: hidden ;
     }
