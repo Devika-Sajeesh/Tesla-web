@@ -54,11 +54,7 @@
 		}
 	});
 	document.addEventListener("scroll", function () {
-<<<<<<< HEAD
-		let aboutSection = document.getElementById("preEvents");
-=======
 		let aboutSection = document.getElementById("stat");
->>>>>>> master
 		let aboutPosition = aboutSection.getBoundingClientRect().top;
 		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
 		let screenHeight = window.innerHeight;
@@ -75,11 +71,7 @@
 		}
 	});
 	document.addEventListener("scroll", function () {
-<<<<<<< HEAD
-		let aboutSection = document.getElementById("footer");
-=======
 		let aboutSection = document.getElementById("preEvents");
->>>>>>> master
 		let aboutPosition = aboutSection.getBoundingClientRect().top;
 		let aboutBottom = aboutSection.getBoundingClientRect().bottom;
 		let screenHeight = window.innerHeight;
@@ -95,8 +87,6 @@
 			aboutSection.classList.add("hidden-out-left");
 		}
 	});
-<<<<<<< HEAD
-=======
 	
 	document.addEventListener("scroll", function () {
 		let aboutSection = document.getElementById("footer");
@@ -115,15 +105,10 @@
 			aboutSection.classList.add("hidden-out-right");
 		}
 	});
->>>>>>> master
 	window.addEventListener("resize", function () {
     document.body.style.overflowX = "hidden";
     document.documentElement.style.overflowX = "hidden";
 });
-<<<<<<< HEAD
-	
-=======
->>>>>>> master
 		
 	// SMOOTH SCROLL
 	$(function () {
