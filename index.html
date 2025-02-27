@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" type="image/x-icon" href="images/tesla_logo.ico">
+
+    <title>Tesla 2025</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+
+
+</head>
+
+<div id="preloader">
+    <div class="battery-container">
+        <div class="battery">
+            <div class="battery-fill"></div>
+        </div>
+        <p id="battery-percentage">0%</p>
+    </div>
+</div>
+
+
+
+<body class="home-page">
+
+    <main>
+        <!-- 
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Music Festival 2023</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header> -->
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logoTesla">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/tpface.png" alt="">
+                    </a>
+                </div>
+
+                <!--                 <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a> -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="committee.html">Committee</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Pricing</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a> -->
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+            <img src="images/teslalogo.png" alt="Tesla Icon" class="hero-bg-logo move-image" id="teslaLogo">
+            <div class="container d-flex justify-content-center align-items-center height-100vh">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center" style="margin-bottom: 0px;">
+                        <small>Department of Electrical Engineering Presents</small>
+                        <!-- <img src="images/tesla-icon.png" class="airplane" id="airplane"> -->
+                        <div class="logoTesla-main">
+                            <img src="images/TESLA.png" alt="Tesla Icon" class="glitch-img " id="Tesla25">
+                            <!-- <img src="images/tesla-icon.png" alt="" class="bg-logo"> -->
+                        </div>
+                       
+
+                        <!-- <div class="logo-container">
+                            <img src="images/tesla-icon.png" alt="Tesla Logo" class="center-logo">
+                        </div> -->
+
+                        <!-- <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a> -->
+                        <div class="hero-date">14, 15 March 2025</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <!-- <div class="video-wrap"> -->
+                <!-- <video muted autoplay playsinline class="custom-video" poster=""> -->
+                    <!-- <source src="video/Tesla Logo Website 2.mp4" type="video/mp4" /> -->
+                    <!-- <source src="video/Tesla Logo Website 2_1.mp4" type="video/mp4"> -->
+                    <!-- Your browser does not support the video tag. -->
+                <!-- </video> -->
+            <!-- </div> -->
+        </section>
+        <section class="countdown-section">
+            <h2 class="countdown-title">Powering Up in :</h2>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-box"><span id="days">00</span><br><span class="label">Days</span></div>
+                <div class="time-box"><span id="hours">00</span><br><span class="label">Hours</span></div>
+                <div class="time-box"><span id="minutes">00</span><br><span class="label">Minutes</span></div>
+                <div class="time-box"><span id="seconds">00</span><br><span class="label">Seconds</span></div>
+            </div>
+        </section>
+        
+        <div class="explore-events-container">
+            <a class="nav-link click-scroll" href="#section_3" id="events-btn"><button>Explore Events &nbsp; <img src="images/arrow-icon.png" alt="" width="25px" style="opacity: 0.8;"></button></a>
+        </div>
+
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info hidden" id="aboutTesla">
+                            <h2 class="text-white mb-4">About TESLA</h2>
+
+                            <p class="text-white">
+                                TESLA isn’t just an event;<br/> it’s a surge of innovation and energy! Inspired by Nikola Tesla’s 
+                                genius, it brings together the brightest minds to showcase groundbreaking 
+                                ideas, tackle high-voltage challenges, and spark the future. With cutting-edge projects, 
+                                power-packed workshops, expert panels, and electrifying hackathons, TESLA is where innovation 
+                                meets opportunity. Be part of the revolution—charge ahead with TESLA!
+
+                            </p>
+
+                            <!-- <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+
+                            <p class="text-white">You are not allowed to redistribute the template ZIP file on any other
+                                website without a permission.</p>
+
+                            <h6 class="text-white mt-4">Whole Night Party</h6> -->
+
+                            <!-- <p class="text-white">Please tell your friends about our website. Thank you.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="logoTesla-main">
+                            <img src="/images/tesla logo .jpg" alt="">
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+
+                            <div class="about-text-info d-flex">
+                                <div class="d-flex">
+                                    <i class="about-text-icon bi-person"></i>
+                                </div>
+
+
+                                <div class="ms-4">
+                                    <h3>a happy moment</h3>
+
+                                    <p class="mb-0">your amazing festival experience with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+    
+    <section class="logistics-section section-padding">
+        <div class="stats-container hidden" id="stat">
+            <div class="stat-item">
+                <i class="fas fa-footprints"></i>
+                <p>5000+<br>FOOTFALLS</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-check"></i>
+                <p>40+<br>EVENTS</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-medal"></i>
+                <p>150K+<br>PRIZE MONEY</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-graduation-cap"></i>
+                <p>60+<br>COLLEGES</p>
+            </div>
+        </div>
+        <div class="contacts-container">
+            <a class="nav-link click-scroll" href="#footer"  id="contact-btn"><button>Contact Us &nbsp <img src="images/arrow-icon.png" alt="" width="25px" style="opacity: 0.8;"></button></a>
+        </div>
+    </section>
+        
+        <!-- Events Section -->
+
+        <section class="events-section" id="section_3">
+
+
+
+            <!-- Events Container -->
+            <div class="container events-container hidden" id="workshops">
+
+                <div class="flex-container">
+                    <h2 class="text-white">Workshops</h2>
+                    <!-- <a href="events-listing.html" class="view-all-button">View All</a> -->
+                </div>
+                <div class="events-container">
+                    
+                    <div class="event-card">
+                        <img src="images/Workshops/Choreo.png" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">Choreo Workshop</div>
+                        <a href="https://makemypass.com/tesla-choreo-workshop" class="register-link">Register</a>
+                    </div>
+
+                    <!-- <div class="event-card">
+                        <img src="images/Events/Code and Connect.jpg" alt="Event 2 Image" style="width: 100%;">
+                        <div class="event-title">CODE AND CONNECT</div>
+                       
+                        <a href="https://bit.ly/CodeandConnectTesla" class="register-link">Register</a>
+                    </div>
+
+                    
+                    <div class="event-card">
+                        <img src="images/Events/Signal Showdown.jpg" alt="Event 9 Image" style="width: 100%;">
+                        <div class="event-title">SIGNAL SHOWDOWN</div>
+                        <a href="https://docs.google.com/forms/d/192Ven5G08ata8VagC7u53hsx2wMURcth8RfIFdGr4b0/edit"
+                            class="register-link">Register</a>
+                    </div> -->
+
+                </div>
+            </div> 
+
+            <!-- Pre-events -->
+
+            <!-- Pre-events -->
+
+            <div class="container events-container hidden" id="preEvents">
+
+                <div class="flex-container mb-4">
+                    <h2 class="text-white">Competitions</h2>
+                    <a href="events-listing2.html" class="view-all-button">View All</a>
+                </div>
+                <div class="events-container">
+                    <!-- Event Card 1 -->
+
+                    <div class="event-card">
+                        <img src="images/Competitions/MiniMilitia.jpg" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">Mini Militia</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="https://tinyurl.com/tesla25esports " class="register-link">Register</a>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="images/Competitions/Chess.jpg" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">Chess</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="https://tinyurl.com/tesla25esports " class="register-link">Register</a>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="images/Competitions/BGMI.jpg" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">BGMI</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="https://tinyurl.com/tesla25esports " class="register-link">Register</a>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="images/Competitions/Valorant.jpg" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">Valorant</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="https://tinyurl.com/tesla25esports " class="register-link">Register</a>
+                    </div>
+
+
+                    <div class="event-card">
+                        <img src="images/Competitions/Tesla MUN.jpg" alt="Event 1 Image" style="width: 100%;">
+                        <div class="event-title">TESLA MUN</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="https://forms.gle/eT2pPVmZc3B3wv2Y8" class="register-link">Register</a>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="images/Competitions/Football Tournament.jpg" alt="Event 2 Image" style="width: 100%;">
+                        <div class="event-title">Football Tournament</div>
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <a href="" class="register-link" style="pointer-events: none; cursor: default;">Closed</a>
+                    </div>
+
+
+                   
+
+                    
+                </div>
+                </div>
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/3s Football.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">3s FOOTBALL</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/BGMI Tournament.jpg" alt="Event 2 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">BGMI TOURNAMENT</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Mascot Competition.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">MASCOT COMPETITION</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Pes tournament.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">PES TOURNAMENT</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Prank Contest.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">PRANK CONTEST</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Treasure Hunt.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">TREASURE HUNT</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Valorant Tournament.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">VALORANT TOURNAMENT</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="event-card"> -->
+                        <!-- <img src="images/Pre-events/Vidyuth Ideathon.jpg" alt="Event 1 Image" style="width: 100%;"> -->
+                        <!-- <div class="event-title">VIDYUTH IDEATHON</div> -->
+                        <!-- <div class="event-date">Date: March 25, 2024</div> -->
+                        <!-- <a href="" class="register-link">Register</a> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+            
+
+            <!-- t-shirt -->
+
+            <!-- <div class="grab-your-tees mb-4">
+                <h4 class="mb-4">Check them out!</h4>
+                <a href="http://bit.ly/Tesla_tshirts">
+                    <img src="images/TSHIRT SALE.jpg" alt="Tee Image">
+                </a>
+            </div> -->
+
+        </section>
+
+
+        <section class="event-gallery">
+            <h2>Tesla through the years</h2>
+            <div class="gallery-container">
+                <!-- Left Image Container -->
+                <div class="media-container left">
+                    <img id="left-image" src="images/Tesla-24/img1.jpeg" alt="Event Image 1">
+                </div>
+        
+                <!-- Video Container (Center) -->
+                <div class="media-container video">
+                    <video width="560" height="315" autoplay muted loop>
+                        <source src="video/aftervideo.mp4" type="video/mp4">
+                    </video>
+                    <!-- <p>Tesla Inauguration - 2018</p> -->
+                </div>
+                
+        
+                <!-- Right Image Container -->
+                <div class="media-container right">
+                    <img id="right-image" src="images/Tesla-24/img2.JPG" alt="Event Image 2">
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+
+        <footer class="site-footer" id="footer">
+            <div class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <!-- <h2 class="text-white mb-lg-0">Tesla</h2> -->
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-6 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Any Queries?</h5>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: +91 96055 77592" class="site-footer-link">
+                                Pranav M - +91 85479 58592
+
+                            </a>
+                        </p>
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: +91 96055 77592" class="site-footer-link">
+                                Christo Stanly - +91 97471 04733
+
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:hello@company.com" class="site-footer-link">
+                                Email : tesla25cet@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                        <div class="col-lg-10 col-md-6 col-12 mb-4 mb-lg-0">
+                            <h5 class="site-footer-title mb-3">Want to sponsor?</h5>
+
+                            <p class="text-white d-flex mb-1">
+                                <a href="tel: +91 96055 77592" class="site-footer-link">
+                                    Abhishek : +91 87143 05499
+
+                                </a>
+                            </p>
+
+                            <p class="text-white d-flex mb-1">
+                                <a href="tel: +91 96055 77592" class="site-footer-link">
+                                    Karun : +91 94460 28123
+                                </a>
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Socials</h5>
+
+                        <ul class="social-icon d-flex justify-content-lg">
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/teslacet/" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/teslacet" class="social-icon-link">
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="copyright-row">
+
+                        Copyright © 2025 Tesla
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                root: null,  // Observes elements relative to viewport
+                threshold: 0.3,  // Triggers when 30% of the element is visible
+            };
+        
+            const fadeInObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in"); // Add class when visible
+                        observer.unobserve(entry.target); // Stops observing after it appears
+                    }
+                });
+            }, observerOptions);
+        
+            // Observe Both Buttons
+            const contactBtn = document.getElementById("contact-btn");
+            const eventsBtn = document.getElementById("events-btn");
+        
+            if (contactBtn) fadeInObserver.observe(contactBtn);
+            if (eventsBtn) fadeInObserver.observe(eventsBtn);
+        });
+
+        // -------------Preloader battery animation---------
+
+        document.addEventListener("DOMContentLoaded", function () {
+    // Check if the preloader was already shown
+    if (localStorage.getItem("preloaderShown")) {
+        document.getElementById("preloader").style.display = "none"; // Hide preloader if already shown
+        return; // Stop further execution
+    }
+
+    let batteryFill = document.querySelector(".battery-fill");
+    let batteryText = document.getElementById("battery-percentage");
+    let batteryLevel = 0;
+
+    function updateBattery() {
+        if (batteryLevel <= 100) {
+            batteryFill.style.width = batteryLevel + "%"; // Update battery width
+            batteryText.textContent = batteryLevel + "%"; // Update percentage text
+            batteryLevel += 5; // Increase battery charge every interval
+        }
+
+        // Ensure battery fully fills & stays green at 100%
+        if (batteryLevel > 100) {
+            batteryFill.style.width = "100%";
+            batteryFill.style.background = "#8de602"; // Change to bright green at 100%
+            clearInterval(batteryInterval); // Stop animation
+
+            // Save in localStorage so preloader doesn't show again
+            localStorage.setItem("preloaderShown", "true");
+
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none"; // Remove preloader
+            }, 700); // Delay to ensure full battery animation is seen
+        }
+    }
+
+    let batteryInterval = setInterval(updateBattery, 200); // Increase every 200ms
+});
+
+
+
+
+        </script>
+        
+
+</body>
+
+</html>
