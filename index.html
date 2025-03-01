@@ -34,6 +34,7 @@
 
 <div id="preloader">
     <div class="battery-container">
+        <img src="images/robobg.png" alt="Battery Background" class="preloader-bg">
         <div class="battery">
             <div class="battery-fill"></div>
         </div>
@@ -584,43 +585,35 @@ T e m p l a t e M o
 
         // -------------Preloader battery animation---------
         document.addEventListener("DOMContentLoaded", function () {
-    if (localStorage.getItem("preloaderShown")) {
-        document.getElementById("preloader").style.display = "none"; // Hide preloader if already shown
-        return;
-    }
-
+    let preloader = document.getElementById("preloader");
+    let mainContent = document.getElementById("main-content");
     let batteryFill = document.querySelector(".battery-fill");
     let batteryText = document.getElementById("battery-percentage");
+
     let batteryLevel = 0;
 
     function updateBattery() {
         if (batteryLevel <= 100) {
             batteryFill.style.width = batteryLevel + "%";
             batteryText.textContent = batteryLevel + "%";
-            batteryLevel += 10; // Faster charge
-            setTimeout(updateBattery, 100); // Smooth animation with setTimeout
+            batteryLevel += 10;
+            setTimeout(updateBattery, 150);
         } else {
             batteryFill.style.width = "100%";
-            batteryFill.style.background = "#8de602";
-
-            // Save in localStorage so it doesn't show again
-            localStorage.setItem("preloaderShown", "true");
+            batteryFill.style.background = "#8de602"; 
 
             setTimeout(() => {
-                document.getElementById("preloader").style.opacity = "0";
+                preloader.classList.add("fade-out"); // Apply fade-out effect
                 setTimeout(() => {
-                    document.getElementById("preloader").style.display = "none";
-                }, 500); // Smooth fade-out
+                    preloader.style.display = "none"; // Hide preloader
+                    mainContent.style.display = "block"; // Show main content
+                }, 800);
             }, 500);
         }
     }
 
     updateBattery(); // Start animation
 });
-
-
-
-
 
         </script>
         
