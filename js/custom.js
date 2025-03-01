@@ -188,6 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(document.querySelector(".stats-container"));
 });
+
 /*countdown*/
 document.addEventListener("DOMContentLoaded", function () {
     function updateCountdown() {
@@ -214,6 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
     updateCountdown(); // Run immediately to avoid 1s delay
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const leftImages = [
@@ -269,10 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(changeImages, 3000); // Change every 3 seconds
 });
-
-
-
-
 
 
 	// SMOOTH SCROLL

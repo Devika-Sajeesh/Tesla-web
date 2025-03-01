@@ -242,8 +242,6 @@ body.loaded #preloader {
     font-size: 14px;
   }
 }
-
-/* Chatbot Styling */
 #chatbot-container {
   position: fixed;
   bottom: 20px;
@@ -253,27 +251,16 @@ body.loaded #preloader {
   background: #262626;
   color: white;
   border-radius: 10px;
-  display: none;
+  display: flex;
   flex-direction: column;
-  overflow: hidden;
-  font-family: 'Outfit', sans-serif;
-  border: 2px solid #384B1A;
 }
 
 #chatbot-header {
-  background: #384B1A;
+  background: #394B1A;
   padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-}
-
-#chatbot-header button {
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
 }
 
 #chatbot-messages {
@@ -284,27 +271,20 @@ body.loaded #preloader {
 }
 
 textarea {
-  width: calc(100% - 20px);
+  width: 90%;
   height: 50px;
-  padding: 10px;
   margin: 5px;
-  border-radius: 5px;
-  border: none;
-  resize: none;
   background: #262626;
   color: white;
+  resize: none;
 }
 
 button {
   width: 100%;
   padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  background: #384B1A;
+  background: #394B1A;
   color: white;
-  font-weight: bold;
+  border: none;
 }
 
 
@@ -984,6 +964,16 @@ body {
 .video-wrap {
   z-index: -100;
 }
+.video-wrapper {
+  border-radius: 15px; /* Adjust as needed */
+  overflow: hidden; /* Forces video to stay within border */
+  display: inline-block;
+}
+video {
+  width: 100%; /* Ensures video fills the wrapper */
+  height: auto;
+}
+
 
 .custom-video {
   position: absolute;
@@ -1959,6 +1949,8 @@ body {
   display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+
 }
 
 
@@ -1968,6 +1960,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures full coverage */
+  border-radius: 15px;
+
 }
 
 /* Video Styling */
@@ -1976,6 +1970,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .media-container.video iframe {
@@ -1989,6 +1984,8 @@ body {
   .media-container {
       width: 350px;
       height: 200px;
+      border-radius: 15px;
+
   }
 }
 
