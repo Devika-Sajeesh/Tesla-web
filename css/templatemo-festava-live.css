@@ -205,7 +205,7 @@ body.loaded #preloader {
   .preloader-bg {
     width: 80%; /* Make background smaller on mobile */
     max-width: 250px; /* Reduce max width */
-    top: 15%; /* Adjust positioning for smaller screens */
+    top: 45%; /* Adjust positioning for smaller screens */
   }
 
   .battery {
@@ -229,7 +229,7 @@ body.loaded #preloader {
   .preloader-bg {
     width: 90%;
     max-width: 200px;
-    top: 10%;
+    top: 40%;
   }
 
   .battery {
