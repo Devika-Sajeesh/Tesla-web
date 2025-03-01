@@ -178,7 +178,6 @@ https://templatemo.com/tm-583-festava-live
 }
 
 /* Battery Fill (Charging Animation) */
-/* Battery Fill (Charging Animation) */
 .battery-fill {
   width: 0%;
   height: 100%;
@@ -201,7 +200,48 @@ body.loaded #preloader {
   pointer-events: none;
 }
 
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+  .preloader-bg {
+    width: 80%; /* Make background smaller on mobile */
+    max-width: 250px; /* Reduce max width */
+    top: 15%; /* Adjust positioning for smaller screens */
+  }
 
+  .battery {
+    width: 180px; /* Reduce battery size */
+    height: 12px; /* Adjust height */
+    border: 3px solid #474747; /* Adjust border thickness */
+    margin-top: 300px; /* Reduce top margin for better fit */
+  }
+
+  .battery-fill {
+    transition: width 0.4s linear;
+  }
+
+  #battery-percentage {
+    font-size: 16px; /* Make text smaller */
+  }
+}
+
+/* Further Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+  .preloader-bg {
+    width: 90%;
+    max-width: 200px;
+    top: 10%;
+  }
+
+  .battery {
+    width: 150px;
+    height: 10px;
+    margin-top: 250px;
+  }
+
+  #battery-percentage {
+    font-size: 14px;
+  }
+}
 
 
 /* ---------------Preloader ends------------- */
