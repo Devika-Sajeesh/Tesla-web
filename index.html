@@ -583,12 +583,10 @@ T e m p l a t e M o
         });
 
         // -------------Preloader battery animation---------
-
         document.addEventListener("DOMContentLoaded", function () {
-    // Check if the preloader was already shown
     if (localStorage.getItem("preloaderShown")) {
         document.getElementById("preloader").style.display = "none"; // Hide preloader if already shown
-        return; // Stop further execution
+        return;
     }
 
     let batteryFill = document.querySelector(".battery-fill");
@@ -597,28 +595,29 @@ T e m p l a t e M o
 
     function updateBattery() {
         if (batteryLevel <= 100) {
-            batteryFill.style.width = batteryLevel + "%"; // Update battery width
-            batteryText.textContent = batteryLevel + "%"; // Update percentage text
-            batteryLevel += 5; // Increase battery charge every interval
-        }
-
-        // Ensure battery fully fills & stays green at 100%
-        if (batteryLevel > 100) {
+            batteryFill.style.width = batteryLevel + "%";
+            batteryText.textContent = batteryLevel + "%";
+            batteryLevel += 10; // Faster charge
+            setTimeout(updateBattery, 100); // Smooth animation with setTimeout
+        } else {
             batteryFill.style.width = "100%";
-            batteryFill.style.background = "#8de602"; // Change to bright green at 100%
-            clearInterval(batteryInterval); // Stop animation
+            batteryFill.style.background = "#8de602";
 
-            // Save in localStorage so preloader doesn't show again
+            // Save in localStorage so it doesn't show again
             localStorage.setItem("preloaderShown", "true");
 
             setTimeout(() => {
-                document.getElementById("preloader").style.display = "none"; // Remove preloader
-            }, 700); // Delay to ensure full battery animation is seen
+                document.getElementById("preloader").style.opacity = "0";
+                setTimeout(() => {
+                    document.getElementById("preloader").style.display = "none";
+                }, 500); // Smooth fade-out
+            }, 500);
         }
     }
 
-    let batteryInterval = setInterval(updateBattery, 200); // Increase every 200ms
+    updateBattery(); // Start animation
 });
+
 
 
 

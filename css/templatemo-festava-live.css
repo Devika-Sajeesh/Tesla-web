@@ -135,7 +135,7 @@ https://templatemo.com/tm-583-festava-live
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #262626; /* Background while loading */
+  background-image: url("../images/robobg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,6 @@ https://templatemo.com/tm-583-festava-live
 
 /* Battery Container */
 .battery-container {
-  background-image: url("../images/robobg.png");
   text-align: center;
   color: white;
   font-size: 20px;
