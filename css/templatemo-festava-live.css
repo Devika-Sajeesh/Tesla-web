@@ -145,6 +145,7 @@ https://templatemo.com/tm-583-festava-live
 
 /* Battery Container */
 .battery-container {
+  background-image: url("../images/robobg.png");
   text-align: center;
   color: white;
   font-size: 20px;
@@ -471,7 +472,7 @@ body {
 .countdown-section {
   text-align: center;
   padding: 20px;
-  background: #262626 /*linear-gradient(to bottom, #252525b8, #262626aa)*/;
+  background: linear-gradient(to bottom, #252525b8, #262626aa);
   padding-bottom: 9vh;
 }
 
@@ -1101,7 +1102,7 @@ body {
   display: flex;
     flex-direction: column;
     /* background-color: #26262695; */
-    background: #262626 /*linear-gradient(to bottom, #252525b8, #262626)*/;
+    background: linear-gradient(to bottom, #252525b8, #262626);
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     text-align: center;
@@ -1181,7 +1182,7 @@ body {
 -----------------------------------------*/
 .about-section {
   /* background-image: url('../images/edward-unsplash-blur.jpg'); */
-  background: #262626/*linear-gradient(to bottom, var(--dark-color),#8fe60237)*/; 
+  background: linear-gradient(to bottom, var(--dark-color),#8fe60237); 
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1221,8 +1222,7 @@ body {
 }
 
 .logistics-section{
-  /* background: linear-gradient(to bottom, var(--dark-color),#8fe60237);  */
-  background: #262626; 
+  background: #394B1A;  
   padding-top: 10px !important;
 }
 
@@ -1328,7 +1328,7 @@ body {
 -----------------------------------------*/
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
-  background: #262626/*linear-gradient(to bottom,#262626, #8fe60216, #8fe60237,#8fe60216,#262626)*/;
+  background: linear-gradient(to bottom,#262626, #8fe60216, #8fe60237,#8fe60216,#262626);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1564,11 +1564,11 @@ body {
   EVENTS              
 -----------------------------------------*/
 #events{
-  background: #262626/*linear-gradient(to bottom, var(--dark-color), #8fe60237, var(--dark-color))*/; 
+  background: linear-gradient(to bottom, var(--dark-color), #8fe60237, var(--dark-color)); 
 }
 .events-section {
   padding: 20px;
-  background: #262626/*linear-gradient(to bottom, #8fe60237, var(--dark-color))*/; 
+  background: linear-gradient(to bottom, #8fe60237, var(--dark-color)); 
   background-repeat: no-repeat;
 }
 
