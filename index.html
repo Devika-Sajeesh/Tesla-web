@@ -586,9 +586,15 @@ T e m p l a t e M o
         // -------------Preloader battery animation---------
         document.addEventListener("DOMContentLoaded", function () {
     let preloader = document.getElementById("preloader");
-    let mainContent = document.getElementById("main-content");
     let batteryFill = document.querySelector(".battery-fill");
     let batteryText = document.getElementById("battery-percentage");
+
+    // Check if the preloader has been shown before
+    if (sessionStorage.getItem("preloaderShown") === "true") {
+        preloader.style.display = "none"; // Hide preloader on reloads or page changes
+        document.body.classList.add("loaded");
+        return;
+    }
 
     let batteryLevel = 0;
 
@@ -597,23 +603,28 @@ T e m p l a t e M o
             batteryFill.style.width = batteryLevel + "%";
             batteryText.textContent = batteryLevel + "%";
             batteryLevel += 10;
-            setTimeout(updateBattery, 150);
+            setTimeout(updateBattery, 150); // Smooth battery fill
         } else {
             batteryFill.style.width = "100%";
-            batteryFill.style.background = "#8de602"; 
+            batteryFill.style.background = "#8DE602"; // Green full battery
 
             setTimeout(() => {
-                preloader.classList.add("fade-out"); // Apply fade-out effect
+                preloader.classList.add("fade-out");
                 setTimeout(() => {
-                    preloader.style.display = "none"; // Hide preloader
-                    mainContent.style.display = "block"; // Show main content
-                }, 800);
+                    preloader.style.display = "none";
+                    document.body.classList.add("loaded");
+
+                    // Store in sessionStorage so it only applies during the session
+                    sessionStorage.setItem("preloaderShown", "true");
+                }, 500);
             }, 500);
         }
     }
 
-    updateBattery(); // Start animation
+    updateBattery(); // Start battery animation
 });
+
+
 
         </script>
         

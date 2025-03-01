@@ -155,7 +155,7 @@ https://templatemo.com/tm-583-festava-live
   top: 20%;  /* Adjust positioning */
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.8; /* Optional: Adjust transparency */
+  opacity: 0.6; /* Optional: Adjust transparency */
 }
 
 /* Battery Container */
@@ -205,7 +205,7 @@ body.loaded #preloader {
   .preloader-bg {
     width: 80%; /* Make background smaller on mobile */
     max-width: 250px; /* Reduce max width */
-    top: 45%; /* Adjust positioning for smaller screens */
+    top: 35%; /* Adjust positioning for smaller screens */
   }
 
   .battery {
@@ -229,7 +229,7 @@ body.loaded #preloader {
   .preloader-bg {
     width: 90%;
     max-width: 200px;
-    top: 40%;
+    top: 30%;
   }
 
   .battery {
